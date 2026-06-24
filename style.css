@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content:center;
+    background-color:pink;
+}
+.form{
+    position: absolute;
+    top: 35%;
+    box-shadow: 0 4px 8px;
+    width: 400px;
+    background-color: white;
+    border-radius: 25px;
+}
+.input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    font-size: 20px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+.input::placeholder{
+    color: blue;
+}
+.list{
+    padding: 0;
+    margin: 0;
+}
+.list li{
+    list-style-type: none;
+    padding: 20px;
+    font-family: cursive;
+    border-top: dotted;
+    border-color: darkgray;
+    position: relative;
+}
+.list li .fa-trash{
+    color: brown;
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.list li .fa-square{
+    color: greenyellow;
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.list li.checked{
+    color: blueviolet;
+    text-decoration: line-through;
+}
